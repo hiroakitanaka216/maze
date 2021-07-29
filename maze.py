@@ -110,14 +110,14 @@ class Maze():
                 if self.maze[j][i] == PATH:
                     if count == startPos:
                         self.maze[j][i] = START
-
+                        ''''''
                         # 障害物（Obstacle）の位置をランダムに2つ設定
                         a = int(random.uniform(0, self.height))
                         b = int(random.uniform(0, self.width))
 
                         self.maze[j][i+b] = OBSTACLE
                         self.maze[j+a][i+b] = OBSTACLE
-
+                        ''''''
                         self.start = (i, j)
                         return
                     else:
